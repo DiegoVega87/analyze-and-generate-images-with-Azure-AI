@@ -24,7 +24,7 @@ const computerVisionClient = new ComputerVisionClient(
  */
 
 
-function analyzeImage() {
+function AnalyzeImage() {
   async.series([
     async function () {
 
@@ -66,5 +66,3 @@ function analyzeImage() {
     throw (err);
   });
 }
-
-analyzeImage();

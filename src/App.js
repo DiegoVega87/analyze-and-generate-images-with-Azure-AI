@@ -17,7 +17,7 @@ function App() {
 
 
 function callAnalyzeImage() {
-  callAnalyzeImage();
+  AnalyzeImage();
 }
 
 export default App;
