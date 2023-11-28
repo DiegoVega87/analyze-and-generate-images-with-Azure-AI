@@ -1,4 +1,5 @@
 import React from 'react';
+import analyzeImage from './azure-image-analysis';
 
 function App() {
   return (
@@ -7,10 +8,17 @@ function App() {
         <h1>Computer Vision</h1>
         <div>Insert URL or type prompt:</div>
         <input type="text" size = "50" placeholder="Enter URL to analize or textual prompt to generate an image" />
-        <div><button>Analyze</button> <button>Generate</button></div>
+        <div><button onClick= "callAnalizeImage()"> Analyze</button> <button>Generate</button></div>
 
       </header>
     </div>
   );
 }
+
+
+function callAnalyzeImage() {
+  analyzeImage();
+}
+
 export default App;
+export { callAnalyzeImage };
