@@ -21,4 +21,3 @@ function callAnalyzeImage() {
 }
 
 export default App;
-export { callAnalyzeImage };
